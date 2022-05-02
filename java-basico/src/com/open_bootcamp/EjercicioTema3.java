@@ -15,14 +15,8 @@ public class EjercicioTema3 {
     public static void main(String[] args) {
         String[] nombres = { "Sam", "Alejandra", "Judith", "Cris" };
 
-        System.out.printf("%s%n",concatenarNombres(nombres));
-    }
-
-    private static Object concatenarNombres(String[] nombres) {
-        String nombreCompleto = "";
         for(String nombre : nombres)
-            nombreCompleto += nombre + " ";
-        return nombreCompleto;
+            System.out.print(nombre + " ");
     }
 
 }
