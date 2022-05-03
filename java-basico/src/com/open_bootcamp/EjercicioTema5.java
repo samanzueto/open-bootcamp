@@ -33,19 +33,16 @@ interface CocheCRUD{
 class CocheCRUDImpl implements CocheCRUD{
     @Override
     public void save() {
-        // TODO Auto-generated method stub
         System.out.println("Guardamos el coche");
     }
 
     @Override
     public void findAll() {
-        // TODO Auto-generated method stub
         System.out.println("Buscamos coche");
     }
 
     @Override
     public void delete() {
-        // TODO Auto-generated method stub
         System.out.println("Eliminamos coche");
     }
 }

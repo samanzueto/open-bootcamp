@@ -35,9 +35,7 @@ class SmartDevice{
     }
 
     @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        
+    public String toString() {        
         return "SmartDevice{" +
         "bateria='" + bateria + '\'' +
         ", pantalla='" + pantalla + '\'' +
@@ -54,7 +52,6 @@ class SmartPhone extends SmartDevice{
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         
         return "SmartPhone{" +
                 "bateria='" + bateria + '\'' +
@@ -76,7 +73,6 @@ class SmartWatch extends SmartDevice{
     
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return "SmartWatch{" +
                 "bateria='" + bateria + '\'' +
                 ", pantalla='" + pantalla + '\'' +
