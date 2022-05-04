@@ -1,2 +1,3 @@
 saludo = "Hola Mundo!"
-print(saludo+ " es " + type(saludo))
+print(saludo)
+print(type(saludo))
