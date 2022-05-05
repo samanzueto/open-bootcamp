@@ -1,0 +1,12 @@
+body{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
+}
+
+p{
+    color: rgb(45, 41, 80);
+}
+
+.miparrafo{
+    background-color: #ffffe0;
+}
