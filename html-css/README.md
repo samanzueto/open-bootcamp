@@ -23,3 +23,8 @@ Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 
 
 * Una de las celdas ocupe dos columnas.
 * Una de las celdas ocupe dos filas.
+
+## Ejercicio 3
+Para este ejercicio deberéis introducir una imagen y darle además de un texto alternativo.
+
+Aparte, añadiréis un audio y un vídeo a vuestra elección, deben tener algunos de los atributos vistos en las sesiones u otros que os parezcan interesantes.
