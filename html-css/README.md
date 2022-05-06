@@ -44,3 +44,13 @@ Los elementos que tengan la class miparrafo deberán presentar su texto en cursi
 
 ## Ejercicio 5
 Deberéis crear una galería de imágenes, esta galería estará en un contenedor con el borde sólido, en la galería podrás seleccionar la imagen que quieras visualizar entre cuatro, para seleccionar qué imagen ver se hará mediante un input de type radio.
+
+## Ejercicio 6
+Para este ejercicio vas a crear en el archivo HTML:
+
+* Un párrafo.
+* Un párrafo con la class miparrafo.
+* Un párrafo dentro de un contenedor div.
+* Un párrafo dentro de un contenedor div con la clase miparrafo. 
+
+Mediante el uso de CSS aplica a cada uno un color de letra distinto.

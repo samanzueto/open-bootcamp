@@ -1,0 +1,21 @@
+body{
+    font-family: "Bodoni MT", "Bodoni 72", "Didot", "Didot LT STD", "Hoefler Text", "Garamond", "Times New Roman, serif";
+    font-size: 18px;
+    background-color: #f5f5f5;
+}
+
+p {
+    color: #062351;
+}
+
+p.miparrafo {
+    color: #235190;
+}
+
+div > p {
+    color: #519006;
+}
+
+div > p.miparrafo{
+    color: #900623;
+}
