@@ -54,3 +54,10 @@ Para este ejercicio vas a crear en el archivo HTML:
 * Un párrafo dentro de un contenedor div con la clase miparrafo. 
 
 Mediante el uso de CSS aplica a cada uno un color de letra distinto.
+
+## Ejercicio 7
+En este ejercicio deberéis crear una página con un formulario de inicio de sesión, está pagina tendrá:
+
+* Una imagen de fondo.
+* Un formulario de inicio de sesión, contendrá mail y contraseña, un recuadro seleccionable de "Acepto términos y condiciones" y un botón de enviar.
+* Validación de campos.

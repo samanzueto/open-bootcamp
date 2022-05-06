@@ -1,0 +1,101 @@
+html, body {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body{
+    background-image: url("https://picsum.photos/id/119/1280/720");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Franklin Gothic, Arial Bold, sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:focus {
+    outline: none;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 40vw;
+}
+
+.login-form__field {
+    margin-bottom: 1rem;
+}
+
+.login-form__field input{
+    width: 80%;
+    max-width: 100%;
+    line-height: 3rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.5rem;
+    font-size: 20px;
+}
+
+.login-form__field .login-form__field--usuario:focus,
+.login-form__field .login-form__field--password:focus{
+    border-color:#000;
+    box-shadow: 1px 1px 5px #000;
+    transition: .3s ease-in;
+}
+
+.login-form__field .login-form__field--usuario,
+.login-form__field .login-form__field--password{
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: 30px;
+    padding-left: 2.5rem;
+}
+
+.login-form__field .login-form__field--usuario{
+    background-image: url(person.png);
+}
+
+.login-form__field .login-form__field--password{
+    background-image: url(llave.png);
+}
+
+.login-form__field .login-form__field--checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.login-form label[for="terminos"] {
+    font-size: 14px;
+}
+
+.login-form__field#checkbox {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.login-form__field .login-form__field--submit{
+    text-decoration: none;
+    padding: 0.3rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #f5f5f5;
+    cursor: pointer;
+    width: auto;
+}
