@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Ejercicio 8</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+           <img src="https://www.svgrepo.com/show/294145/code.svg" intrinsicsize="40 x 40" srcset="https://www.svgrepo.com/show/294145/code.svg" alt="@samanzueto" title="@samanzueto" width="40" height="32">
+           <span class="fs-4 animate__animated animate__fadeIn animate__delay-2s">Implementando Tooltips</span>
+        </a>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="container">
+            <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo está seguro">
+                <i class="bi bi-hand-thumbs-up"></i>
+            </button>
+            <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="tooltip" data-bs-placement="left" title="¡No pulsar!">
+                <i class="bi bi-exclamation-octagon"></i>
+            </button>
+            <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="La documentación de <em>Tooltip</em> <u>está en</u> <b>Bootstrap</b>">
+                <i class="bi bi-info-circle"></i>
+            </button>
+            <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Éxito en lo que hagas!">
+                <i class="bi bi-chat-square-dots"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer py-3 mt-auto">
+        <p class="text-center text-muted">© 2022 | By @samanzueto</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+  </body>
+</html>

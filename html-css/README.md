@@ -61,3 +61,6 @@ En este ejercicio deberéis crear una página con un formulario de inicio de ses
 * Una imagen de fondo.
 * Un formulario de inicio de sesión, contendrá mail y contraseña, un recuadro seleccionable de "Acepto términos y condiciones" y un botón de enviar.
 * Validación de campos.
+
+## Ejercicio 8
+Para practicar con Bootstrap, en este ejercicio vas a crear un elemento animado a tu elección, además crearás varios botones a los cuales les aparecerá un tooltip en distintas posiciones (arriba, abajo, derecha, izquierda).
