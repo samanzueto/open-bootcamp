@@ -1,0 +1,79 @@
+/** {
+    background-color: #f5f5f5;
+}*/
+
+html, body{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.galeria {
+    height: 350px;
+    width: 300px;
+    margin: 1rem auto;
+    border: 1px solid #555555;
+    position: relative;
+}
+
+.galeria img {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.galeria > input[type="radio"]{
+    position: relative;
+    top:320px;
+    margin-left: 2rem;
+    border:none;
+    background-color: #555555;
+}
+
+.galeria > input[type="radio"]:checked{
+    background-color: #244399;
+}
+
+.galeria > input[type="radio"]:nth-of-type(1):checked ~ img:nth-of-type(1),
+.galeria > input[type="radio"]:nth-of-type(2):checked ~ img:nth-of-type(2),
+.galeria > input[type="radio"]:nth-of-type(3):checked ~ img:nth-of-type(3),
+.galeria > input[type="radio"]:nth-of-type(4):checked ~ img:nth-of-type(4){
+    opacity: 1;
+}
+
+footer{
+    text-align: right;
+}
+
+/** Para crear video de fondo **/
+#bg-video {
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.content {
+    position: fixed;
+    bottom: 0rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: #f5f5f5;
+    width: 100vw;
+    padding: 2rem;
+}
+
+#btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #000;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #f5f5f5;
+    color: #000;
+}
