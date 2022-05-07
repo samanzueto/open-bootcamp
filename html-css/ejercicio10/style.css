@@ -1,0 +1,51 @@
+body, 
+main{ 
+    margin: 0; 
+    background-color: #f5f5ff;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero { 
+    background-color: white;
+    padding: 1rem; 
+    border-radius: 0rem;
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+
+h1 {    
+    color: #062351;
+}
+
+video {
+    display: none;
+}
+
+img {
+    display: block;
+}
+
+@media screen AND (min-width:480px) {
+
+    .hero {
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    video {
+        display: block;        
+        max-width: 90vw;
+    }
+
+    img {
+        display: none;
+    }
+}
