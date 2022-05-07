@@ -64,3 +64,9 @@ En este ejercicio deberéis crear una página con un formulario de inicio de ses
 
 ## Ejercicio 8
 Para practicar con Bootstrap, en este ejercicio vas a crear un elemento animado a tu elección, además crearás varios botones a los cuales les aparecerá un tooltip en distintas posiciones (arriba, abajo, derecha, izquierda).
+
+## Ejercicio 9
+En este ejercicio nos vamos a centrar en animaciones, deberás crear unas figuras cuadradas a las cuales aplicarle las siguientes animaciones:
+
+* Cuando el ratón esté encima, comienza una animación que le haga rotar sobre si misma 360º.
+* Cuando el ratón esté encima, se desplazará hacia la derecha mientras desaparece (fade).

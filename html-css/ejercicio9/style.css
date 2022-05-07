@@ -1,0 +1,77 @@
+html, body {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body{
+    background-image: url("https://picsum.photos/id/119/1280/720");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Franklin Gothic, Arial Bold, sans-serif;
+    font-size: 18px;
+}
+main{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+div {
+    transition                A short hand
+    <single-transition> = [ none | <single-transition-property> ] || <time> || <easing-function> || <time>
+    
+    ----
+    
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+animation {
+    animation 	                A shorthand property for setting all the animation properties
+    <single-animation> = <time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]
+    
+    ----
+
+    animation-delay 	        Specifies a delay for the start of an animation
+    animation-direction 	    Specifies whether an animation should be played forwards, backwards or in alternate cycles
+    animation-duration 	        Specifies how long time an animation should take to complete one cycle
+    animation-fill-mode 	    Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+    animation-iteration-count 	Specifies the number of times an animation should be played
+    animation-name 	            Specifies the name of the @keyframes animation
+    animation-play-state 	    Specifies whether the animation is running or paused
+    animation-timing-function   Specifies the speed curve of the animation
+}
+*/
+
+/* The animation code */
+.magic-box {
+    width: 200px;
+    height: 200px;
+    background-color: #062351;
+    margin: 1rem;
+    position: relative;
+}
+
+.rotate360 {
+    transition: .5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.rotate360:hover{
+    transform: rotate(360deg);
+}
+
+.moveFade:hover {
+    animation: moveFade 3s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+@keyframes moveFade {
+    0%   { transform:translatex(0); opacity:1; }
+    100% { transform:translatex(100%); opacity:0; }
+}
