@@ -55,3 +55,14 @@ Por ejemplo: teniendo numero_inicial = 2 y numero_final = 8, el programa debe im
 
 ### Ejercicio 3
 Escribe un programa que sea capaz de mostrar los números del 1 al 100 en orden inverso.
+
+## Tema 5
+
+### Ejercicio 1
+Escribe una función que calcule el área de un triángulo, recibiendo la altura y la base como parámetros y otra función que calcule el área de un círculo recibiendo el radio del mismo.
+
+### Ejercicio 2
+Escribe una función que pueda decirte si un número (número entero) es primo o no.
+
+### Ejercicio 3
+Escribe una función que pueda decirte si un año (número entero) es bisiesto o no.
