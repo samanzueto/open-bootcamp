@@ -1,14 +1,9 @@
 import time
 
 curr = time.localtime()
-print("Current time:", curr.tm_hour)
 
-min = curr.tm_min
-hora = curr.tm_hour
-
-if (min != 0):
-    hora-= 1
-    min = 60 - min
+min = 59 - curr.tm_min
+hora = 18 - curr.tm_hour
 
 if curr.tm_hour > 19:
     print("¡Ya te estás pasando! Es hora de salir.")
