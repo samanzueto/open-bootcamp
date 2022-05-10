@@ -6,16 +6,19 @@ class Alumno:
         self._nombre = nombre
         self._nota = nota
 
-    def getAlumno(self):
+    def get_alumno(self):
         print(self._nombre, self._nota)
     
-    def getNota(self):
-        print("La nota es", self._nota, ".")
-        if(self._nota>8):
+    def get_nota(self):
+        if(self._nota>6):
             print("La nota es aprobatoria.")
         else:
             print("La nota no es aprobatoria")
 
 alumnito = Alumno("Sam Anzueto", 9)
-alumnito.getAlumno()
-alumnito.getNota()
+alumnito.get_alumno()
+alumnito.get_nota()
+
+alumnito2 = Alumno("Jhon Doe", 5)
+alumnito2.get_alumno()
+alumnito2.get_nota()
