@@ -2,20 +2,20 @@ import classes
 import pickle
 
 def main():
-    bocho = classes.Coche(color = "azul", ruedas = 4, puertas = 6, velocidad = 100, cilindrada = 6)
-    guardar_clase(bocho)
-    bocho_f = obtener_clase()
-    print(f'Cambiaremos una propiedad de {bocho_f}')
+    guardar_objeto()
+    bocho_f = obtener_objeto()
+    print(bocho_f.__repr__, '\n Haremos un cambio en la propiedad color.')
     bocho_f.color = 'caramelo'
-    print(f'Ahora {bocho_f}')
+    print(bocho_f)
 
-def guardar_clase(obj):
+def guardar_objeto():
+    bocho = classes.Coche(color = "azul", ruedas = 4, puertas = 6, velocidad = 100, cilindrada = 6)
     f = open('vehiculo.bin','wb')
-    pickle.dump(obj, f)
+    pickle.dump(bocho, f)
     f.close()
-    print(f'Hemos creado {obj} en el archivo')
+    print(f'Hemos creado el {bocho} en el archivo')
 
-def obtener_clase():
+def obtener_objeto():
     f = open('vehiculo.bin','rb')
     obj =pickle.load(f)
     f.close()
