@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "Este es mi primer ejercicio de JavaScript con Node en OB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "ob-start": "echo \"Hola, este es mi primer ejercicio con Node en el mejor Bootcamp de programación del mundo\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Anzueto",
+  "license": "ISC"
+}
