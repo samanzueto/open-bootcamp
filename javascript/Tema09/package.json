@@ -1,0 +1,14 @@
+{
+  "name": "tema09",
+  "version": "1.0.0",
+  "description": "Gestión de logs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sam Anzueto",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.7.2"
+  }
+}
