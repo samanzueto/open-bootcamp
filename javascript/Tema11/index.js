@@ -1,13 +1,13 @@
 class Estudiante {
-    nombre;
-    asignaturas = ['JavaScript', 'HTML', 'CSS'];
+    #nombre;
+    #asignaturas = ['JavaScript', 'HTML', 'CSS'];
 
     constructor(nombre = "Jhon Doe"){
-        this.nombre = nombre;
+        this.#nombre = nombre;
     }
 
     obtenDatos(){
-        return `Soy el estudiante ${this.nombre} y mis asignaturas son ${this.asignaturas}`;
+        return `Soy el estudiante ${this.#nombre} y mis asignaturas son ${this.#asignaturas}`;
     }
 }
 
