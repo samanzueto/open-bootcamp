@@ -1,0 +1,39 @@
+{% url 'contacto_index' as contacto_inicio %}
+{% url 'contacto_create' as contacto_crear %}
+{% url 'todo_index' as tarea_inicio %}
+{% url 'todo_create' as tarea_crear %}
+
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>AgendaPersonal<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="{{ contacto_inicio }}"><span>Contactos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{{ contacto_inicio }}" class="{% if request.path == contacto_inicio %} active {%endif%}">Todos</a></li>
+              <li><a href="{{ contacto_crear }}" class="{% if request.path == contacto_crear %} active {%endif%}">Nuevo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="{{ tarea_inicio }}"><span>Tareas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{{ tarea_inicio }}"  class="{% if request.path == tarea_inicio %} active {%endif%}">Todas</a></li>
+              <li><a href="{{ tarea_crear }}" class="{% if request.path == tarea_crear %} active {%endif%}">Nueva</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav>
+          
+
+      <a class="btn-getstarted scrollto" href="{% url 'about' %}">Sobre mí</a>
+
+    </div>
+  </header><!-- End Header -->

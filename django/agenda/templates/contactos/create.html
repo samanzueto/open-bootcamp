@@ -1,0 +1,45 @@
+{% extends "layout/base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block styles %}  
+    <style>
+      form label{display: none !important;}
+    </style>      
+{% endblock %}
+
+{% block content %}
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <!--div class="container">
+
+        <div class="section-header">
+          <h2>Nuevo Contacto</h2>
+          <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+        </div>
+
+      </div-->
+
+      <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-8 offset-2">
+            <h3>{{ title }} contacto</h3>
+            {% if contacto_url == 'contacto_create' %}
+              <form action="{% url contacto_url %}" method="post" role="form" class="php-email-form">
+            {% else %}
+              <form action="{% url contacto_url contacto_id=contacto_id %}" method="post" role="form" class="php-email-form">
+            {% endif %}
+              {% csrf_token %}                
+                {{ form }}
+              <div class="text-center mt-3"><button type="submit">Send</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+{% endblock %}

@@ -1,0 +1,9 @@
+   <div class="d-flex justify-content-between">  
+        <a href="{% url url_create %}"><i class="bi bi-{{ icon }}"></i> Crear</a>
+        <form action="{% url url_search %}" role="form" method="get" class="d-flex align-items-center">
+            <div class="input-group mb-3">
+                <input type="search" name="search" id="search" class="form-control" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="button-search">
+                <button type="submit" id="button-search" class="btn btn-outline-secondary"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+   </div>

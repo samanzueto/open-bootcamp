@@ -1,0 +1,17 @@
+{% load static %}
+<div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+    <div class="service-item">
+      <div class="img">
+        <img src="{% static 'assets/img/services-1.jpg' %}" class="img-fluid" alt="">
+      </div>
+      <div class="details position-relative">
+        <div class="icon">
+          <i class="bi bi-pin"></i>
+        </div>
+        <a href="{% url 'todo_detail' todo_id=tarea.id %}" class="stretched-link">
+          <h3>{{ tarea.title }}</h3>
+        </a>
+        <p>{{ tarea.descripcion }}</p>
+      </div>
+    </div>
+  </div><!-- End Service Item -->

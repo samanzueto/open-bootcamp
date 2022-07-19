@@ -1,0 +1,41 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Contactos{% endblock %}
+
+{% block messages %}
+  {% include "layout/partials/messages.html" %}
+{% endblock %}
+
+{% block styles %}  
+    <style>
+      .letter{padding-right: 5px; padding-left: 5px; border-right: solid lightgray 1px;}
+      .letter:last-child{border-right: none;}
+    </style>      
+{% endblock %}
+
+{% block content %}
+    <!-- ======= Contactos Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Mis contactos</h2>      
+              {% if contactos.count > 0 %}
+                {% include "contactos/partials/filters.html" %}
+                {% include "layout/partials/search.html" with url_search='contacto_index' url_create='contacto_create' icon='person-plus' %}
+              {% endif %}
+          </div>
+  
+          <div class="row gy-5">
+            {% if contactos.count > 0 %}
+              {% for contacto in contactos %}
+                  {% include "contactos/partials/card.html" with contacto=contacto %}
+              {% endfor %}
+            {% else %}
+              <p>No hay contactos. ¿Quieres agregar uno? <a href="{% url 'contacto_create' %}">Crear nuevo</a>.</p>
+            {% endif %}  
+          </div>
+  
+        </div>
+      </section><!-- End Team Section -->
+{% endblock %}

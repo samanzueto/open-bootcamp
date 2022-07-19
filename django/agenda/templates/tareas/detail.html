@@ -1,0 +1,41 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Tareas{% endblock %}
+
+{% block content %}
+{% load static %}
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-out">
+
+        <div class="row  mt-3">
+            <p><a href="{% url 'todo_index' %}"><i class="bi bi-arrow-left-short"></i> Regresar</a></p>
+        </div>
+  
+          <div class="row g-5">
+  
+            <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+              <h3>{{ todo.title }}</h3>
+              <p><i class="bi bi-calendar-plus"></i> {{ todo.date }}</p>
+              <p>Prioridad: {{ todo.priority }}</p>
+              <p>{{ todo.descripcion }}</p>
+              {% if todo.estimated_end %}
+                <a class="cta-btn align-self-start" href="#"><i class="bi bi-calendar"></i> {{ todo.estimated_end }}</a>
+              {% endif %}
+            </div>
+  
+            <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+              <div class="img">
+                <img src="{% static 'assets/img/cta.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+  
+          </div>
+            <div class="row">
+                <p><a href="{% url 'todo_edit' todo_id=todo.id %}"><i class="bi bi-pencil"></i> Editar</a> | <a href="{% url 'todo_delete' todo_id=todo.id %}"><i class="bi bi-trash"></i> Borrar</a></p>
+            </div>              
+  
+        </div>
+      </section><!-- End Call To Action Section -->
+{% endblock %}

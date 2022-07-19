@@ -1,0 +1,34 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Tareas{% endblock %}
+
+{% block messages %}
+  {% include "layout/partials/messages.html" %}
+{% endblock %}
+
+{% block content %}
+     <!-- ======= Services Section ======= -->
+     <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">          
+          <h2>Mis tareas</h2>
+
+          {% if todo.count > 0 %}
+            {% include "layout/partials/search.html" with url_search='todo_index' url_create='todo_create' icon='plus-square' %}
+          {% endif %}
+        </div>
+
+        <div class="row gy-5">          
+          {% if todo.count > 0 %}
+            {% for tarea in todo %}
+                {% include "tareas/partials/card.html" with tarea=tarea %}
+            {% endfor %}
+          {% else %}
+            <p>No hay tareas. ¿Quieres agregar una? <a href="{% url 'todo_create' %}">Crear nueva</a>.</p>
+          {% endif %}  
+        </div>
+  
+      </div>
+    </section><!-- End Team Section -->
+{% endblock %}

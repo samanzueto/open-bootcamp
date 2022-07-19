@@ -1,0 +1,12 @@
+{% load static %}
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.svg' %}" class="img-fluid animated">
+      <h2>Agenda <span>Personal</span></h2>
+      <p>Encuentra todos tus contactos y tareas.</p>
+      <div class="d-flex">
+        <a href="{% url 'contacto_index' %}" class="btn-watch-video d-flex align-items-center"><i class="bi bi-people"></i> Contactos</a>
+        <a href="{% url 'todo_index' %}" class="btn-watch-video d-flex align-items-center"><i class="bi bi-pin"></i><span>Tareas</span></a>
+      </div>
+    </div>
+  </section>
